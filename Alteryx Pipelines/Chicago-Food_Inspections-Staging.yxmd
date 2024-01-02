@@ -1,0 +1,538 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="437" y="65" width="696" height="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 47</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="606" y="114" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+                <FormulaField expression="[Engine.WorkflowFileName]" field="DI_WorkflowFileName" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+DI_WorkflowFileName = [Engine.WorkflowFileName]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1002" y="114" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\AISHWA~1\AppData\Local\Temp\Engine_36396_404400cebca4ba43bf2333ec18adb7a9_\Engine_36396_0a6bf00d8fc0b34496e83354820b6121~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="462" y="114" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Food_Inspections.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Food_Inspections.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Inspection ID" size="254" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Food_Inspections.tsv" type="V_WString" />
+                <Field name="DBA Name" size="254" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Food_Inspections.tsv" type="V_WString" />
+                <Field name="AKA Name" size="254" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Food_Inspections.tsv" type="V_WString" />
+                <Field name="License #" size="254" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Facility Type" size="254" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Risk" size="254" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Address" size="254" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Food_Inspections.tsv" type="V_WString" />
+                <Field name="City" size="254" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Food_Inspections.tsv" type="V_WString" />
+                <Field name="State" size="254" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Zip" size="254" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Inspection Date" size="254" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Inspection Type" size="254" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Results" size="254" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Violations" size="254" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Latitude" size="254" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Longitude" size="254" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Location" size="254" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Food_Inspections.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="774" y="114" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>Inspection Date</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yy</Format>
+              <OutputFieldName>INSPECTION_DATE_CONVERTED</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Inspection Date From:
+MM/dd/yy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1002" y="186" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=chicago_mysql;UID=root;PWD=__EncPwd1__|||stg_chicago_food_inspection</File>
+              <Passwords>4E4B98DCDABE85321DE148774FD266F04</Passwords>
+              <FormatSpecificOptions>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=chicago_mysql
+Query=stg_chicago_food_inspection</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="161" y="388" width="1224" height="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 39</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="186" y="437" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>10000</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Business_Licenses.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ID" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LICENSE ID" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="ACCOUNT NUMBER" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="SITE NUMBER" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LEGAL NAME" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="DOING BUSINESS AS NAME" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="ADDRESS" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="CITY" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="STATE" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="ZIP CODE" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="WARD" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="PRECINCT" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="WARD PRECINCT" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="POLICE DISTRICT" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LICENSE CODE" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LICENSE DESCRIPTION" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="BUSINESS ACTIVITY ID" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="BUSINESS ACTIVITY" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LICENSE NUMBER" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="APPLICATION TYPE" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="APPLICATION CREATED DATE" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="APPLICATION REQUIREMENTS COMPLETE" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="PAYMENT DATE" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="CONDITIONAL APPROVAL" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LICENSE TERM START DATE" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LICENSE TERM EXPIRATION DATE" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LICENSE APPROVED FOR ISSUANCE" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="DATE ISSUED" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LICENSE STATUS" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LICENSE STATUS CHANGE DATE" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="SSA" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LATITUDE" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LONGITUDE" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LOCATION" size="10000" source="File: D:\5 DADABI\24 Assignment - Assignment Chicago Food Inspections\Business_Licenses.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="354" y="437" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+                <FormulaField expression="&quot;test&quot;" field="DI_WorkflowFileName" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+DI_WorkflowFileName = "test"
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="474" y="437" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>APPLICATION CREATED DATE</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>APPLICATION_CREATED_DATE_CONVERTED</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert APPLICATION CREATED DATE From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="630" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>PAYMENT DATE</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>PAYMENT_DATE_CONVERTED</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert PAYMENT DATE From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="762" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>LICENSE TERM START DATE</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>LICENSE_TERM_START DATE_CONVERTED</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert LICENSE TERM START DATE From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="894" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>LICENSE TERM EXPIRATION DATE</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>LICENSE TERM EXPIRATION DATE CONVERTED</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert LICENSE TERM EXPIRATION DATE From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="1014" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>DATE ISSUED</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>DATE ISSUED CONVERTED</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert DATE ISSUED From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="1134" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>LICENSE STATUS CHANGE DATE</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>LICENSE STATUS CHANGE DATE CONVERTED</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert LICENSE STATUS CHANGE DATE From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1254" y="438" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=chicago_mysql;UID=root;PWD=__EncPwd1__|||stg_chicago_business_licenses</File>
+              <Passwords>4E4B98DCDABE85321DE148774FD266F04</Passwords>
+              <FormatSpecificOptions>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Overwrite</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=chicago_mysql
+Query=stg_chicago_business_license...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>FinaL_Chicago_Workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="001640ee-8bcb-4a6d-81b4-abeb8216842f" />
+      <Telemetry>
+        <PreviousWorkflowId value="e8290b14-16e7-429d-a3c9-27a62467c328" />
+        <OriginWorkflowId value="bd60f15e-e442-435f-b82d-e7e1bc959ddf" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
